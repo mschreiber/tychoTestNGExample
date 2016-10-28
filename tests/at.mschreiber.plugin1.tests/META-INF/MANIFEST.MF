@@ -5,4 +5,5 @@ Bundle-SymbolicName: at.mschreiber.plugin1.tests
 Bundle-Version: 1.0.0.qualifier
 Fragment-Host: at.mschreiber.plugin1;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: at.mschreiber.test.base;bundle-version="1.0.0"
+Require-Bundle: org.testng;bundle-version="6.9.13",
+ com.beust.jcommander;bundle-version="1.48.0"

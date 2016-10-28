@@ -14,11 +14,19 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
+	<repositories>
+		<!-- This is the p2 update site where Tycho can fetch TestNG from -->
+		<repository>
+			<id>testng</id>
+			<layout>p2</layout>
+			<url>https://dl.bintray.com/testng-team/testng-p2-beta/composite/</url>
+		</repository>
+	</repositories>
+
 	<modules>
-		<module>at.mschreiber.test.base</module>
 		<module>at.mschreiber.plugin1.tests</module>
 	</modules>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -38,7 +46,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>
 	
  
